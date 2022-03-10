@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    padding: 20px 50px;
+}
