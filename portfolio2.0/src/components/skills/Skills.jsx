@@ -10,43 +10,34 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
-const list = ['HTML', 'CSS', 'Javascript']
-
-function generate(element) {
-  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((list) =>
-    React.cloneElement(element, {
-      key: list
-    })
-  );
-}
-
 export default function Skills() {
+  const skills = ["HTML", "CSS", "Javascript", "Node", "Express", "MySQL", "MongoDB", "React", "NoSQL", "AWS" ]
 
   return (
     <div className='skills' id='skills'>
-        <h1>Skills</h1>
-        <div className='container'>
-          <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
-            <FormGroup row></FormGroup>
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6}>
-                <Typography sx={{ mt: 4, mb: 2 }} variant="h4" component="div">
-                  Skills I have learned in my journey so far include:
-                </Typography>
-                <List>
-                  {generate(
-                    <ListItem>
-                      <ListItemIcon>
-                        <ArrowForwardIcon />
-                      </ListItemIcon>
-                      <ListItemText primary={list} />
-                    </ListItem>
-                  )}
-                </List>
-              </Grid>
+      <h1>Skills</h1>
+      <div className='container'>
+        <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
+          <FormGroup row></FormGroup>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Typography sx={{ mt: 4, mb: 2 }} variant="h4" component="div">
+                Skills I have experience in so far include:
+              </Typography>
+              <List>
+                {skills.map(skill => (
+                  <ListItem>
+                    <ListItemIcon>
+                      <ArrowForwardIcon />
+                    </ListItemIcon>
+                    <ListItemText primary={skill} />
+                  </ListItem>
+                ))}
+              </List>
             </Grid>
-          </Box>
-        </div>
+          </Grid>
+        </Box>
+      </div>
     </div>
   )
 }
