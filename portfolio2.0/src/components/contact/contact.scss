@@ -65,6 +65,14 @@
                 border-radius: 15px;
                 cursor: pointer;
                 font-weight: 500;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            span {
+                color: $mainColor;
             }
         }
     }

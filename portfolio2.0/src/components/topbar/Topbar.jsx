@@ -6,7 +6,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     <div className={'topbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
         <div className="left">
-          <a href='#intro' className='logo'><Home className='iconMain'/></a>
+          <a href='#intro' className='logo'><Home className='iconMain' /></a>
           <div className="itemContainer">
             <Person className='icon' />
             <span>+1 (928)273-7027</span>
@@ -21,7 +21,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span className='line1'></span>
             <span className='line2'></span>
             <span className='line3'></span>
-            </div>
+          </div>
         </div>
       </div>
     </div>
