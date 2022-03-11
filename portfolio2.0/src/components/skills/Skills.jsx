@@ -11,7 +11,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 
 export default function Skills() {
-  const skills = ["HTML", "CSS", "Javascript", "Node", "Express", "MySQL", "MongoDB", "React", "NoSQL", "AWS" ]
+  const skills = ["HTML", "CSS", "Javascript", "Node", "Express", "MySQL", "MongoDB", "React", "NoSQL", "AWS"]
 
   return (
     <div className='skills' id='skills'>
@@ -37,6 +37,9 @@ export default function Skills() {
             </Grid>
           </Grid>
         </Box>
+        <div>
+          <img src="/assets/skillsIcon.png" alt="<a href='https://pngtree.com/so/Programmer'>Programmer png from pngtree.com/</a>" />
+        </div>
       </div>
     </div>
   )

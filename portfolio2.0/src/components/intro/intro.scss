@@ -3,7 +3,7 @@
     display: flex;
 
     .left {
-        flex: 0.5;
+        flex: 0.4;
         overflow: hidden;
 
         .imgContainer {
@@ -21,7 +21,7 @@
         }
     }
     .right {
-        flex: 0.5;
+        flex: 0.6;
         position: relative;
 
         .wrapper {
@@ -30,7 +30,7 @@
             padding-left: 50px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            float: left;
 
             h1{
                 font-size: 60px;
